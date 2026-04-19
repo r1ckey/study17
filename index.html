@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DE Learning Journey</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <style>
+    :root {
+      --theme-color: #4f46e5;
+      --sidebar-width: 280px;
+      --base-font-size: 15px;
+    }
+    @media (max-width: 768px) {
+      :root { --base-font-size: 14px; }
+    }
+    .markdown-section pre > code { font-size: 13px; }
+    .markdown-section input[type="checkbox"] { margin-right: 6px; }
+    .markdown-section table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'DE Learning Journey',
+      repo: 'https://github.com/r1ckey/study17',
+      basePath: 'docs/',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      search: {
+        placeholder: '検索...',
+        noData: '見つかりません',
+      },
+      pagination: {
+        previousText: '前のページ',
+        nextText: '次のページ',
+        crossChapter: true,
+      },
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+</body>
+</html>
