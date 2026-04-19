@@ -1,0 +1,87 @@
+site_name: DE Learning Journey
+site_description: データエンジニアとしての学習ノート - Python × Databricks × dbt
+site_author: DE Learner
+
+theme:
+  name: material
+  language: ja
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切替
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切替
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+    - header.autohide
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - ホーム: index.md
+  - ロードマップ: roadmap.md
+  - Python / PySpark:
+    - 概要・環境構築: python/index.md
+    - PySpark基礎: python/pyspark.md
+  - Databricks:
+    - 概要: databricks/index.md
+    - アーキテクチャ: databricks/architecture.md
+    - Delta Lake: databricks/delta_lake.md
+    - パフォーマンス最適化: databricks/performance.md
+  - dbt:
+    - 概要・基礎: dbt/index.md
+  - Airflow:
+    - 概要・基礎: airflow/index.md
+  - 資格:
+    - ロードマップ: certifications/index.md
+    - GCP ACE: certifications/gcp_ace.md
+    - Databricks Associate: certifications/databricks_associate.md
+    - Azure DE Associate: certifications/azure_de.md
+  - プロジェクト:
+    - 競馬研究: projects/keiba.md
+  - 学習日記: blog/index.md

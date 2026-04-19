@@ -1,0 +1,11 @@
+# MkDocs generated files
+site/
+
+# Claude Code local settings
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
