@@ -1,6 +1,7 @@
 site_name: DE Learning Journey
 site_description: データエンジニアとしての学習ノート - Python × Databricks × dbt
 site_author: DE Learner
+site_url: https://r1ckey.github.io/study17/
 
 theme:
   name: material
@@ -65,18 +66,25 @@ markdown_extensions:
 nav:
   - ホーム: index.md
   - ロードマップ: roadmap.md
+  - SQL:
+    - SQL for DE（必須）: sql/index.md
   - Python / PySpark:
     - 概要・環境構築: python/index.md
+    - Pandas基礎: python/pandas.md
     - PySpark基礎: python/pyspark.md
   - Databricks:
     - 概要: databricks/index.md
-    - アーキテクチャ: databricks/architecture.md
+    - Lakehouseアーキテクチャ: databricks/lakehouse.md
+    - アーキテクチャ（Spark）: databricks/architecture.md
     - Delta Lake: databricks/delta_lake.md
+    - Unity Catalog: databricks/unity_catalog.md
     - パフォーマンス最適化: databricks/performance.md
   - dbt:
     - 概要・基礎: dbt/index.md
+    - 応用（Macro/Snapshot）: dbt/advanced.md
   - Airflow:
     - 概要・基礎: airflow/index.md
+    - 応用（TaskFlow/Sensor）: airflow/advanced.md
   - 資格:
     - ロードマップ: certifications/index.md
     - GCP ACE: certifications/gcp_ace.md
